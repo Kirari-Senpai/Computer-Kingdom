@@ -1,0 +1,4 @@
+requests
+webbrowser
+tabulate  
+bs4
