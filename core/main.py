@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 
 
@@ -10,19 +9,20 @@ from core.dictionary.by_letter import search_by_letter
 
 def computer_kingdom_menu():
 
-	clrscr()
-	print(banners.brainBanner)
-	print(opciones.menu)
-
-	selector = input(' CPK > ')
+	selector = 0
 
 	while(selector!="exit"):
 
-		if(selector=="1"): 
-			clrscr()
-			print(banners.brainBanner)
+		if(selector=="1"):
+
 			search_by_letter()
-			clrscr()
-			print(banners.brainBanner)
-		
+
+		elif(selector=="2"):
+
+			#search_by_pattern(input(' CPK:(Type a pattern): > '))
+			pass
+
+		clrscr()
+		print(banners.brainBanner)
+		print(opciones.menu)
 		selector = input(' CPK > ')
