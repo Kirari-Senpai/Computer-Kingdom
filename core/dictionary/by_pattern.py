@@ -46,7 +46,15 @@ def search_by_pattern():
 
 		letter = letter[0]
 
-	content = requests.get('http://www.alegsa.com.ar/Dic/%c.htm' % (letter)).content
+	try:
+
+		content = requests.get('http://www.alegsa.com.ar/Dic/%c.htm' % (letter)).content
+
+	except Exception as Except:
+
+		print('Oops!... Ocurrio una excepción: "{}"'.format(Except))
+		sys.exit(1)
+
 	scrap = BeautifulSoup(content, 'lxml').body
 	list_scrap = []
 
