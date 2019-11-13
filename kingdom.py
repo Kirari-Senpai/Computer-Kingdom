@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
 # Creador: Kirari
 # Colaborador: DtxdF
 
@@ -14,10 +14,16 @@
 #                                                   #
 #####################################################
 
+import sys
+
+if (sys.version_info.major != 3):
+
+	print('Sólo se permite usar Python(3.x)')
+	sys.exit(1)
+
 import time as t
 #from core.__configurations__ import *
 from core.main import computer_kingdom_menu
-
 
 if __name__ == '__main__':
 	try:
