@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Busqueda por letra
-
 import sys
 import core.config.banners as banners
 
@@ -20,7 +16,7 @@ except ImportError as error:
 
 def search_by_letter():
 
-	abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+	abc = [chr(ord('a')+x) for x in range(0, 25)]
 
 	user_agent = 'Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/3.6.5'
 
