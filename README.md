@@ -5,7 +5,6 @@
 ## pip install -r requirements.txt:
 
 * requests
-* webbrowser
 * tabulate
 * bs4
 * lxml
