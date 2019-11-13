@@ -84,7 +84,7 @@ def search_by_pattern():
 	for i, _ in enumerate(patterns):
 
 		compiled = [str(x) for x in _[1].string]
-		compiled[_[1].start():_[1].end()] = '\033[1;31m%s\033[0m' % (''.join(compiled[_[1].start():_[1].end()]))
+		compiled[_[1].start():_[1].end()] = '\033[1;31m%s\033[1;37m' % (''.join(compiled[_[1].start():_[1].end()]))
 
 		print('\033[1;34m%d\033[0m) \033[1;37m~ \033[3m%s\033[0m' % (i, ''.join(compiled)))
 
