@@ -1,5 +1,4 @@
 requests
-webbrowser
 tabulate  
 bs4
 lxml

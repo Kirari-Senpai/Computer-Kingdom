@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 import re
 import requests
 import sys
