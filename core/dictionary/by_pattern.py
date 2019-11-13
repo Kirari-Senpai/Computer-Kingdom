@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 import re
 import requests
 import sys
@@ -22,7 +20,7 @@ def search_by_pattern():
 	signal.signal(signal.SIGUSR2, exit_for_signal)
 
 	print()
-	print('\033[1;3;37mSeleccione una letra:\033[0m', end='\n\n')
+	print('\033[1;4;37mSeleccione una letra:\033[0m', end='\n\n')
 
 	for _ in letras:
 
@@ -80,7 +78,7 @@ def search_by_pattern():
 		print('No se encontraron coincidencias')
 		sys.exit(1)
 
-	print('\033[1;37m%d\033[0m ~ \033[1;3;37mCoincidencias\033[0m:' % (len(patterns)))
+	print('\033[1;37m%d\033[0m ~ \033[1;4;37mCoincidencias\033[0m:' % (len(patterns)))
 	print()
 
 	for i, _ in enumerate(patterns):
